@@ -9,10 +9,8 @@
 Просто скопируйте и вставьте эту команду в терминал вашего сервера:
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/ВАШ_НИК/speak4write_bot/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/geekhippo/speak4write_bot/main/install.sh | bash
 ```
-
-*(Замените ВАШ_НИК на ваш username на GitHub)*
 
 ## Особенности
 - Поддержка голосовых, аудио, видео и "кружочков".
