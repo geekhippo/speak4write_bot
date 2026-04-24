@@ -23,19 +23,17 @@ TELEGRAM_TOKEN=$TELEGRAM_TOKEN
 GROQ_API_KEYS=$GROQ_API_KEYS
 EOF
 
-# 4. Скачивание необходимых файлов
+# 4. Скачивание файлов
 echo "📥 Скачиваю файлы бота..."
 curl -sSL https://raw.githubusercontent.com/geekhippo/speak4write_bot/master/bot.py -o bot.py
 curl -sSL https://raw.githubusercontent.com/geekhippo/speak4write_bot/master/Dockerfile -o Dockerfile
 curl -sSL https://raw.githubusercontent.com/geekhippo/speak4write_bot/master/requirements.txt -o requirements.txt
+curl -sSL https://raw.githubusercontent.com/geekhippo/speak4write_bot/master/docker-compose.yml -o docker-compose.yml
 
-# 5. Сборка (предварительная)
-echo "🏗️ Предварительная загрузка образа..."
-docker pull python:3.12-slim
-
-echo "🏗️ Собираю и запускаю бота..."
-docker build -t voice-bot .
-docker run --name voice-bot --env-file .env -d --restart unless-stopped voice-bot
+# 5. Сборка и запуск через docker compose
+echo "🏗️ Собираю и запускаю бота через docker compose..."
+docker compose pull
+docker compose up --detach --build
 
 echo "🎉 Готово! Бот @speak4write_bot запущен."
-echo "Логи: docker logs -f voice-bot"
+echo "Логи: docker compose logs -f"
