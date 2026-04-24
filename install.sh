@@ -32,6 +32,9 @@ curl -sSL https://raw.githubusercontent.com/geekhippo/speak4write_bot/master/req
 # 5. Сборка и запуск
 echo "🏗️ Собираю и запускаю бота..."
 docker build -t voice-bot .
+# Останавливаем старый контейнер, если он есть
+docker stop voice-bot 2>/dev/null || true
+docker rm voice-bot 2>/dev/null || true
 docker run --name voice-bot --env-file .env -d --restart unless-stopped voice-bot
 
 echo "🎉 Готово! Бот @speak4write_bot запущен."
