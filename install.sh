@@ -28,19 +28,11 @@ echo "📥 Скачиваю файлы бота..."
 curl -sSL https://raw.githubusercontent.com/geekhippo/speak4write_bot/master/bot.py -o bot.py
 curl -sSL https://raw.githubusercontent.com/geekhippo/speak4write_bot/master/Dockerfile -o Dockerfile
 curl -sSL https://raw.githubusercontent.com/geekhippo/speak4write_bot/master/requirements.txt -o requirements.txt
-curl -sSL https://raw.githubusercontent.com/geekhippo/speak4write_bot/master/docker-compose.yml -o docker-compose.yml
 
-# 5. Запуск
+# 5. Сборка и запуск
 echo "🏗️ Собираю и запускаю бота..."
-# Использование docker-compose вместо docker compose для старых систем
-# Использование полной формы --detach
-if command -v docker-compose &> /dev/null; then
-    docker-compose build
-    docker-compose up --detach
-else
-    docker compose build
-    docker compose up --detach
-fi
+docker build -t voice-bot .
+docker run --name voice-bot --env-file .env -d --restart unless-stopped voice-bot
 
 echo "🎉 Готово! Бот @speak4write_bot запущен."
-echo "Логи: docker compose logs -f"
+echo "Логи: docker logs -f voice-bot"
