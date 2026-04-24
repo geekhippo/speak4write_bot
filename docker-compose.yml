@@ -1,6 +1,0 @@
-services:
-  bot:
-    build: .
-    container_name: voice-bot
-    env_file: .env
-    restart: unless-stopped

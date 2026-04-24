@@ -4,12 +4,12 @@
 
 ## Установка
 
-Убедитесь, что у вас установлен Docker и Docker Compose.
+Убедитесь, что у вас установлен Docker.
 
 Просто скопируйте и вставьте эту команду в терминал вашего сервера:
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/geekhippo/speak4write_bot/master/install.sh | bash
+curl -H 'Cache-Control: no-cache' -sSL https://raw.githubusercontent.com/geekhippo/speak4write_bot/master/install.sh | bash
 ```
 
 ## Удаление бота
