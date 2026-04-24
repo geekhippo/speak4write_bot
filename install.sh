@@ -13,7 +13,7 @@ fi
 mkdir -p speak4write_bot
 cd speak4write_bot
 
-# 3. Запрос данных (интерактивный режим)
+# 3. Запрос данных
 echo "📝 Нам понадобятся ваши ключи API."
 read -p "Введите TELEGRAM_TOKEN: " TELEGRAM_TOKEN
 read -p "Введите GROQ_API_KEYS (через запятую): " GROQ_API_KEYS
@@ -28,11 +28,11 @@ echo "📥 Скачиваю файлы бота..."
 curl -sSL https://raw.githubusercontent.com/geekhippo/speak4write_bot/master/bot.py -o bot.py
 curl -sSL https://raw.githubusercontent.com/geekhippo/speak4write_bot/master/Dockerfile -o Dockerfile
 curl -sSL https://raw.githubusercontent.com/geekhippo/speak4write_bot/master/requirements.txt -o requirements.txt
-curl -sSL https://raw.githubusercontent.com/geekhippo/speak4write_bot/master/docker-compose.yml -o docker-compose.yml
 
-# 5. Запуск
+# 5. Сборка и запуск
 echo "🏗️ Собираю и запускаю бота..."
-docker-compose up -d --build
+docker build -t voice-bot .
+docker run --name voice-bot --env-file .env -d --restart unless-stopped voice-bot
 
 echo "🎉 Готово! Бот @speak4write_bot запущен."
-echo "Логи: docker-compose logs -f"
+echo "Логи: docker logs -f voice-bot"
