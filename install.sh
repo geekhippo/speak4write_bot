@@ -29,7 +29,10 @@ curl -sSL https://raw.githubusercontent.com/geekhippo/speak4write_bot/master/bot
 curl -sSL https://raw.githubusercontent.com/geekhippo/speak4write_bot/master/Dockerfile -o Dockerfile
 curl -sSL https://raw.githubusercontent.com/geekhippo/speak4write_bot/master/requirements.txt -o requirements.txt
 
-# 5. Сборка и запуск
+# 5. Сборка (предварительная)
+echo "🏗️ Предварительная загрузка образа..."
+docker pull python:3.12-slim
+
 echo "🏗️ Собираю и запускаю бота..."
 docker build -t voice-bot .
 docker run --name voice-bot --env-file .env -d --restart unless-stopped voice-bot
