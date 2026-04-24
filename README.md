@@ -12,10 +12,13 @@
 curl -sSL https://raw.githubusercontent.com/geekhippo/speak4write_bot/master/install.sh | bash
 ```
 
-## Особенности
-- Поддержка голосовых, аудио, видео и "кружочков".
-- Автоматическая ротация API-ключей Groq для обхода лимитов.
-- Развертывание в Docker одной командой.
+## Удаление бота
 
-## Лицензия
-MIT
+Чтобы полностью удалить бота и все связанные с ним файлы:
+
+```bash
+docker stop voice-bot
+docker rm voice-bot
+docker rmi voice-bot
+rm -rf speak4write_bot
+```
