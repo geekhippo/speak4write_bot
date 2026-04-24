@@ -9,7 +9,7 @@
 Просто скопируйте и вставьте эту команду в терминал вашего сервера:
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/geekhippo/speak4write_bot/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/geekhippo/speak4write_bot/master/install.sh | bash
 ```
 
 ## Особенности
