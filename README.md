@@ -22,3 +22,6 @@ docker rm voice-bot
 docker rmi voice-bot
 rm -rf speak4write_bot
 ```
+
+## Лицензия
+MIT
