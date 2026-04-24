@@ -15,8 +15,9 @@ cd speak4write_bot
 
 # 3. Запрос данных
 echo "📝 Нам понадобятся ваши ключи API."
-read -p "Введите TELEGRAM_TOKEN: " TELEGRAM_TOKEN
-read -p "Введите GROQ_API_KEYS (через запятую): " GROQ_API_KEYS
+# Используем < /dev/tty для принудительного чтения из терминала при пайпе
+read -p "Введите TELEGRAM_TOKEN: " TELEGRAM_TOKEN < /dev/tty
+read -p "Введите GROQ_API_KEYS (через запятую): " GROQ_API_KEYS < /dev/tty
 
 cat <<EOF > .env
 TELEGRAM_TOKEN=$TELEGRAM_TOKEN
@@ -32,7 +33,6 @@ curl -sSL https://raw.githubusercontent.com/geekhippo/speak4write_bot/master/req
 # 5. Сборка и запуск
 echo "🏗️ Собираю и запускаю бота..."
 docker build -t voice-bot .
-# Останавливаем старый контейнер, если он есть
 docker stop voice-bot 2>/dev/null || true
 docker rm voice-bot 2>/dev/null || true
 docker run --name voice-bot --env-file .env -d --restart unless-stopped voice-bot
