@@ -32,8 +32,10 @@ curl -sSL https://raw.githubusercontent.com/geekhippo/speak4write_bot/master/doc
 
 # 5. Запуск
 echo "🏗️ Собираю и запускаю бота..."
-# Используем длинные флаги для максимальной совместимости
-docker compose up --detach --build
+# Пытаемся запустить через docker compose, но явно вызываем docker-compose если нужно
+# Убираем -d, если он вызывает конфликт, и используем команду запуска без флагов в одну строку
+docker compose build
+docker compose up -d
 
 echo "🎉 Готово! Бот @speak4write_bot запущен."
 echo "Логи: docker compose logs -f"
