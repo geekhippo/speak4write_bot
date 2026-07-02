@@ -1,0 +1,9 @@
+#!/bin/bash
+# Валидация навыков (простейшая)
+for skill in skills/*/SKILL.md; do
+    if [ -f "$skill" ]; then
+        echo "Validating $skill..."
+        # Проверка наличия заголовка
+        grep -q "name:" "$skill" && grep -q "description:" "$skill" || echo "Error: Missing metadata in $skill"
+    fi
+done

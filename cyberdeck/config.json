@@ -1,0 +1,6 @@
+{
+    "wifi_ssid": "YOUR_WIFI_SSID",
+    "wifi_pass": "YOUR_WIFI_PASS",
+    "weather_api_key": "your_openweathermap_api_key",
+    "weather_city": "Yekaterinburg"
+}

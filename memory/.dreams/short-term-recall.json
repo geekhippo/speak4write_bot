@@ -1,0 +1,401 @@
+{
+  "version": 1,
+  "updatedAt": "2026-07-01T10:51:19.108Z",
+  "entries": {
+    "memory:memory/2026-04-24.md:1:5": {
+      "key": "memory:memory/2026-04-24.md:1:5",
+      "path": "memory/2026-04-24.md",
+      "startLine": 1,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "- [ ] Настроить доступ к Google Workspace (почта, календарь, диск) - Статус: Отложено - Дата постановки: 2026-04-24 - Комментарий: Требуется настройка Google Cloud Project (OAuth 2.0) и MCP-сервера через mcporter. Напомнить позже.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.47001134157180785,
+      "maxScore": 0.47001134157180785,
+      "firstRecalledAt": "2026-04-27T10:56:41.707Z",
+      "lastRecalledAt": "2026-04-27T10:56:41.707Z",
+      "queryHashes": [
+        "2b06a6df2a61"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "2.0",
+        "mcp-сервера",
+        "настроить",
+        "доступ",
+        "google",
+        "почта",
+        "календарь",
+        "диск"
+      ]
+    },
+    "memory:memory/2026-06-18.md:29:58": {
+      "key": "memory:memory/2026-06-18.md:29:58",
+      "path": "memory/2026-06-18.md",
+      "startLine": 29,
+      "endLine": 58,
+      "source": "memory",
+      "snippet": "с:** Обсуждено, пользователь хочет попробовать MicroPythonOS ## Обсуждённые темы - **MeshCore vs Meshtastic** — сравнение для Heltec V3",
+      "recallCount": 8,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 5.362907245862703,
+      "maxScore": 0.8320325611620085,
+      "firstRecalledAt": "2026-06-19T06:45:25.170Z",
+      "lastRecalledAt": "2026-07-01T10:46:23.113Z",
+      "queryHashes": [
+        "713bdb75cceb",
+        "07c618db3432",
+        "e20e1b8804c8",
+        "fc82317af687",
+        "d122e797f925",
+        "5dbd715a7bcc"
+      ],
+      "recallDays": [
+        "2026-06-19",
+        "2026-06-25",
+        "2026-06-26",
+        "2026-06-29",
+        "2026-07-01"
+      ],
+      "conceptTags": [
+        "обсуждено",
+        "пользователь",
+        "хочет",
+        "попробовать",
+        "micropythonos",
+        "обсуждённые",
+        "темы",
+        "meshcore"
+      ]
+    },
+    "memory:memory/2026-06-18.md:1:35": {
+      "key": "memory:memory/2026-06-18.md:1:35",
+      "path": "memory/2026-06-18.md",
+      "startLine": 1,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "# Память — 2026-06-18 ## Настройки модели - **Основная модель:** `openrouter/owl-alpha` (переключена в предыдущей сессии) - Пользователь хочет, чтобы эта модель всегда была основной ## Проекты ### Translator Bot (@translator_bot / @hippotranslator_bot) - **Репозиторий:** [geekhippo/translator_bot](https://github.com/geekhippo/translator_bot) - **Бот:** [@hippotranslator_bot](https://t.me/hippotranslator_bot) - **Дата реализации:** 2026-04-23, обновления: 2026-06-17-18 #### Добавленный функционал (июнь 2026): 1. **OCR с картинок** — pytesseract + Tesseract OCR в Docker 2. **Перевод голосовых/кружочков/видео** — Groq Whisper-large-v3 для STT, ffmpeg для извлечения аудио 3. **Перевод докуме",
+      "recallCount": 13,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 7.432017072917702,
+      "maxScore": 0.8388028254732409,
+      "firstRecalledAt": "2026-06-19T06:45:25.170Z",
+      "lastRecalledAt": "2026-07-01T10:51:19.108Z",
+      "queryHashes": [
+        "713bdb75cceb",
+        "07c618db3432",
+        "e20e1b8804c8",
+        "575daf09c6a6",
+        "fc82317af687",
+        "638d13b1d737",
+        "d122e797f925",
+        "5dbd715a7bcc",
+        "6fa119dd3348",
+        "4e1b93890ff1",
+        "f7d74813c80c",
+        "2149ba7ae4cc"
+      ],
+      "recallDays": [
+        "2026-06-19",
+        "2026-06-25",
+        "2026-06-26",
+        "2026-06-28",
+        "2026-06-29",
+        "2026-07-01"
+      ],
+      "conceptTags": [
+        "router",
+        "openrouter/owl-alpha",
+        "translator-bot",
+        "hippotranslator-bot",
+        "geekhippo/translator-bot",
+        "t.me/hippotranslator-bot",
+        "2026-06-17-18",
+        "голосовых/кружочков/видео"
+      ]
+    },
+    "memory:memory/2026-06-19.md:30:64": {
+      "key": "memory:memory/2026-06-19.md:30:64",
+      "path": "memory/2026-06-19.md",
+      "startLine": 30,
+      "endLine": 64,
+      "source": "memory",
+      "snippet": "- **Проблема:** Новости выглядели по-разному (у одних превью ссылки, у других нет) - **Решение:** Функция `_format_news_text()` — единый шаблон для всех новостей, `disable_web_page_preview=True` #### 5. Планировщик — ежечасный сбор - **Проблема:** `run_once` + `run_repeating` конфликтовали, бот не присылал новости каждый час - **Решение:** Заменён на `asyncio.create_task(_news_loop())` — фоновый цикл с `asyncio.sleep(3600)` - Первый сбор через 3 секунды после старта, потом каждый час #### 6. Немедленный сбор при запуске - Бот сразу собирает новости при старте (через 3 секунды) - Команда `/news` всегда доступна, собирает свежие новости по запросу ### Источники новостей (5) - 🔴 URA.RU (RSS",
+      "recallCount": 5,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.6676322132349015,
+      "maxScore": 0.5561981335282326,
+      "firstRecalledAt": "2026-06-20T23:39:25.291Z",
+      "lastRecalledAt": "2026-07-01T10:46:11.517Z",
+      "queryHashes": [
+        "03eedd6461eb",
+        "216b95c6fa79",
+        "60f8c85665ef",
+        "d9d10f953169",
+        "7dd67c741aca"
+      ],
+      "recallDays": [
+        "2026-06-21",
+        "2026-06-22",
+        "2026-06-26",
+        "2026-06-27",
+        "2026-07-01"
+      ],
+      "conceptTags": [
+        "по-разному",
+        "format-news-text",
+        "disable-web-page-preview",
+        "run-once",
+        "run-repeating",
+        "asyncio.create-task",
+        "news-loop",
+        "asyncio.sleep"
+      ]
+    },
+    "memory:memory/2026-06-19.md:1:34": {
+      "key": "memory:memory/2026-06-19.md:1:34",
+      "path": "memory/2026-06-19.md",
+      "startLine": 1,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "# 2026-06-19 Daily Log ## Новостной бот Екатеринбурга — доработка ### Репозиторий - GitHub: [geekhippo/news_bot](https://github.com/geekhippo/news_bot) - Локальный путь: `~/news_bot/` - Контейнер Docker: `ekaterinburg-news-bot` ### Что делали #### 1. Исправление геофильтра - **Проблема:** Бот присылал новости из других регионов (Пермь, Иркутск, Москва и т.д.) - **Причина:** AI-фильтр был слишком мягким, полагался на AI даже когда ключевые слова отсутствовали - **Решение:** Жёсткий фильтр по ключевым словам в `news_bot/ai.py`: - Список `EKAT_KEYWORDS` — слова Екатеринбурга/Свердловской области - Список `OTHER_REGIONS` — слова других регионов/стран - Логика: если есть слова других ре",
+      "recallCount": 7,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 4.836770432621999,
+      "maxScore": 0.8483829638972173,
+      "firstRecalledAt": "2026-06-22T07:35:05.075Z",
+      "lastRecalledAt": "2026-07-01T10:46:11.517Z",
+      "queryHashes": [
+        "216b95c6fa79",
+        "e20e1b8804c8",
+        "60f8c85665ef",
+        "d9d10f953169",
+        "7dd67c741aca"
+      ],
+      "recallDays": [
+        "2026-06-22",
+        "2026-06-26",
+        "2026-06-27",
+        "2026-07-01"
+      ],
+      "conceptTags": [
+        "geekhippo/news-bot",
+        "github.com/geekhippo/news-bot",
+        "news-bot",
+        "ekaterinburg-news-bot",
+        "т.д",
+        "ai-фильтр",
+        "news-bot/ai.py",
+        "ekat-keywords"
+      ]
+    },
+    "memory:memory/2026-06-21.md:1:26": {
+      "key": "memory:memory/2026-06-21.md:1:26",
+      "path": "memory/2026-06-21.md",
+      "startLine": 1,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "# 2026-06-21 — News bot overhaul & OpenModel config ## News bot code optimisation and fixes ### AI module (`ai.py`) - **Geo-filter fix**: removed `\"урал\"`, `\"уральськ\"`, `\"лесной\"` from `OTHER_REGIONS` — they were falsely rejecting Sverdlovsk/Ural news. - **Cleaned up `EKAT_KEYWORDS`**: removed overly broad words (`девять`, `канал`, `культура`), removed duplicates (`лесной`, `невьянск`). - **Async rewrite**: replaced blocking `requests` with `httpx.AsyncClient` to avoid event loop blockage. - **Removed dead code**: `_ai_check_location`, `select_best_news`, `_pick_best_from_source`, `are_duplicates`. ### Bot module (`bot.py`) - **Forbidden error handling**: when user blocks bot, they're au",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.7485653078496814,
+      "maxScore": 0.732465637320316,
+      "firstRecalledAt": "2026-06-26T00:01:57.118Z",
+      "lastRecalledAt": "2026-07-01T10:46:11.517Z",
+      "queryHashes": [
+        "60f8c85665ef",
+        "575daf09c6a6",
+        "7dd67c741aca"
+      ],
+      "recallDays": [
+        "2026-06-26",
+        "2026-06-28",
+        "2026-07-01"
+      ],
+      "conceptTags": [
+        "ai.py",
+        "geo-filter",
+        "other-regions",
+        "sverdlovsk/ural",
+        "ekat-keywords",
+        "httpx.asyncclient",
+        "ai-check-location",
+        "select-best-news"
+      ]
+    },
+    "memory:memory/2026-06-26.md:1:25": {
+      "key": "memory:memory/2026-06-26.md:1:25",
+      "path": "memory/2026-06-26.md",
+      "startLine": 1,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "лючевым словам - **Контейнер:** Пересобран (`ekaterinburg-news-bot`), запущен, все 5 источников работают",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.566349371096601,
+      "maxScore": 0.7264150092110584,
+      "firstRecalledAt": "2026-06-27T00:01:04.639Z",
+      "lastRecalledAt": "2026-07-01T10:46:11.517Z",
+      "queryHashes": [
+        "d9d10f953169",
+        "7dd67c741aca"
+      ],
+      "recallDays": [
+        "2026-06-27",
+        "2026-07-01"
+      ],
+      "conceptTags": [
+        "ekaterinburg-news-bot",
+        "лючевым",
+        "словам",
+        "контейнер",
+        "пересобран",
+        "ekaterinburg",
+        "news",
+        "bot"
+      ]
+    },
+    "memory:memory/2026-06-26.md:23:41": {
+      "key": "memory:memory/2026-06-26.md:23:41",
+      "path": "memory/2026-06-26.md",
+      "startLine": 23,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "- **Перевод на русский:** Функция `_summarize_ai_news()` — вызывает OpenRouter через `_call_ai` с системным промптом на русском - **The Verge особенность:** Категорийный RSS (`/ai-artificial-intelligence/rss.xml`) не работал (ошибка парсинга XML), используется общий RSS + пост-фильтр по AI-ключевым словам - **Контейнер:** Пересобран (`ekaterinburg-news-bot`), запущен, все 5 источников работают - **Изменения:** Закоммичены и запушены в репозиторий `geekhippo/news_bot` ## AI News Fixes (после фидбэка) - **Проблема:** Каждый вызов `/ainews` показывал одни и те же новости (всегда первая статья из RSS) - **Решение:** Добавлен `_seen_urls` (модульный `set[str]`) — при каждом вызове `get_next()`",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.7559054712506166,
+      "maxScore": 0.7359719241710533,
+      "firstRecalledAt": "2026-06-27T00:01:04.639Z",
+      "lastRecalledAt": "2026-07-01T10:46:17.145Z",
+      "queryHashes": [
+        "d9d10f953169",
+        "7dd67c741aca",
+        "d122e797f925"
+      ],
+      "recallDays": [
+        "2026-06-27",
+        "2026-07-01"
+      ],
+      "conceptTags": [
+        "router",
+        "summarize-ai-news",
+        "call-ai",
+        "пост-фильтр",
+        "ai-ключевым",
+        "ekaterinburg-news-bot",
+        "geekhippo/news-bot",
+        "seen-urls"
+      ]
+    },
+    "memory:memory/2026-06-29.md:1:41": {
+      "key": "memory:memory/2026-06-29.md:1:41",
+      "path": "memory/2026-06-29.md",
+      "startLine": 1,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "# 2026-06-29 ## Обсуждали ### MeshCore vs Meshtastic - Сравнивали два mesh-протокола для проекта на Raspberry Pi + LoRa - Твой Heltec V3 шьётся под обе платформы - Домашнее задание: выбрать MeshCore или Meshtastic (пока не выбрал) - Подробности в MEMORY.md → «Meshtastic проект» ### MeshCore Room Server - Обсудили что это такое (BBS-сервер для mesh-сети) - Как использовать: погода, курсы, ping, объявления ### Промпт для генерации сайта Робин Баркли - Ты попросил промт для портфолио Робин Баркли (Stranger Things) - Я написал подробный промпт с дизайном в стиле ретро-80s, хоррор - Секции: Hero, About, Skills, Work, Contact - Готов к использованию в локальной модели или API ### vLLM и локал",
+      "recallCount": 8,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3.964816524506539,
+      "maxScore": 0.6935845274934473,
+      "firstRecalledAt": "2026-06-30T21:16:34.815Z",
+      "lastRecalledAt": "2026-07-01T10:51:19.108Z",
+      "queryHashes": [
+        "638d13b1d737",
+        "5dbd715a7bcc",
+        "6fa119dd3348",
+        "4e1b93890ff1",
+        "f7d74813c80c",
+        "2149ba7ae4cc"
+      ],
+      "recallDays": [
+        "2026-07-01"
+      ],
+      "conceptTags": [
+        "mesh-протокола",
+        "memory.md",
+        "bbs-сервер",
+        "mesh-сети",
+        "ретро-80s",
+        "обсуждали",
+        "meshcore",
+        "meshtastic"
+      ]
+    },
+    "memory:memory/2026-06-29.md:32:56": {
+      "key": "memory:memory/2026-06-29.md:32:56",
+      "path": "memory/2026-06-29.md",
+      "startLine": 32,
+      "endLine": 56,
+      "source": "memory",
+      "snippet": "- Исправил код: теперь читает GROQ_API_KEYS и GROQ_API_KEY (fallback) - Запушил фикс в GitHub - Пересобрал и перезапустил контейнер - Статус: должно работать ### Очистка диска - Диск заполнен на 86% → 62% (освободил ~4.5 GB) - Очистил: Docker build cache, journal logs, npm/pip кэш, старые образы, Go 1.18, apt кэш ### Reticulum — новый вариант для mesh-проекта - Обсудили Reticulum как альтернативу Meshtastic/MeshCore - Преимущества: Python (нативно на Pi), смешанный транспорт (LoRa + WiFi + Ethernet), LXMF мессенджинг, голосовые звонки - Приложение для Android: **Sideband** (APK с GitHub, не из Play Store) - Написал пошаговый гайд → `reticulum-setup-guide.md` - Heltec V3 прошивается как RNo",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7011872231461906,
+      "maxScore": 0.7011872231461906,
+      "firstRecalledAt": "2026-07-01T10:46:23.113Z",
+      "lastRecalledAt": "2026-07-01T10:46:23.113Z",
+      "queryHashes": [
+        "5dbd715a7bcc"
+      ],
+      "recallDays": [
+        "2026-07-01"
+      ],
+      "conceptTags": [
+        "groq-api-keys",
+        "groq-api-key",
+        "4.5",
+        "npm/pip",
+        "1.18",
+        "mesh-проекта",
+        "meshtastic/meshcore",
+        "reticulum-setup-guide.md"
+      ]
+    },
+    "memory:memory/2026-06-18.md:53:61": {
+      "key": "memory:memory/2026-06-18.md:53:61",
+      "path": "memory/2026-06-18.md",
+      "startLine": 53,
+      "endLine": 61,
+      "source": "memory",
+      "snippet": "- **Вариант реализации:** MicroPythonOS (lvgl_micropython) — портирование на ESP32 DevKit + ST7789 - **Альтернатива:** Чистый MicroPython (код уже написан в `/root/.openclaw/workspace/cyberdeck/main.py`) - **Текущий статус:** Обсуждено, пользователь хочет попробовать MicroPythonOS ## Обсуждённые темы - **MeshCore vs Meshtastic** — сравнение для Heltec V3 - **MicroPythonOS** (micropythonos.com) — Android-like OS на MicroPython, поддерживает ограниченный список устройств - **Новости:** Трамп/Путин/Зеленский, задержание Трабера, Лазарева и отключение электричества",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.67481799204851,
+      "maxScore": 0.67481799204851,
+      "firstRecalledAt": "2026-07-01T10:46:23.113Z",
+      "lastRecalledAt": "2026-07-01T10:46:23.113Z",
+      "queryHashes": [
+        "5dbd715a7bcc"
+      ],
+      "recallDays": [
+        "2026-07-01"
+      ],
+      "conceptTags": [
+        "lvgl-micropython",
+        "micropythonos.com",
+        "android-like",
+        "трамп/путин/зеленский",
+        "вариант",
+        "реализации",
+        "micropythonos",
+        "портирование"
+      ]
+    }
+  }
+}

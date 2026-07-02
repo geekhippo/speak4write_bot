@@ -50,7 +50,7 @@ async def handle_voice(update: Update, context: ContextTypes.DEFAULT_TYPE):
                     with open(file_path, "rb") as f:
                         response = await client.post(
                             "https://api.groq.com/openai/v1/audio/transcriptions",
-                            headers={"Authorization": f"Bearer {api_key}"},
+                            headers={"Authorization": f"Bearer {api_key.strip()}"},
                             files={"file": (file_path, f, "audio/ogg")},
                             data={"model": "whisper-large-v3"},
                             timeout=60.0
